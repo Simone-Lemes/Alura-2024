@@ -2,7 +2,7 @@
 
 ## **Buscador de Atletas Paralímpicos**
 
-### **TL;DR:** Descubra tudo sobre seus atletas paralímpicos favoritos com apenas um clique!
+### **** Descubra tudo sobre seus atletas paralímpicos favoritos com apenas um clique!
 
 **O que faz essa aplicação?**
 
