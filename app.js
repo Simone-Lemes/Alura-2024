@@ -5,7 +5,7 @@ function pesquisar() {
     let resultados = "";
   
     if (!campoPesquisa) {
-      section.innerHTML = "<p>Nenhum atleta foi encontrado</p>"
+      section.innerHTML = "<p class='sem-resultados'>Nenhum atleta foi encontrado &#128531</p>"
       return
     }
   
@@ -20,16 +20,18 @@ function pesquisar() {
     resultadosFiltrados.forEach(dado => {
       resultados += `
         <div class="item-resultado">
-          <h2><a href="${dado.link}" target="_blank">${dado.titulo}</a></h2>
+          <h2>${dado.titulo}</h2>
+          <p class="descricao-meta">${dado.modalidade}</p>
           <img src="${dado.img}" alt="${dado.titulo}">
           <p class="descricao-meta">${dado.descricao}</p>
+          <a href="${dado.instagram}" target="_blank">Instagram</a>
           <a href="${dado.link}" target="_blank">Mais informações</a>
         </div>
       `;
     });
 
    if (!resultados) {
-       resultados = "<p> Nada foi encontrado </p>"
+       resultados = "<p class='sem-resultados'> Infelizmente esse atleta não existe <br> em nosso banco de dados &#128531 </p>"
 
    }
   

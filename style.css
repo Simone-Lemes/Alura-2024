@@ -22,7 +22,7 @@ body {
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
-    height: 100vh; /* Preenche a altura total da viewport */
+    height: 120vh; /* Preenche a altura total da viewport */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
 }
@@ -96,6 +96,14 @@ section button:hover {
     display: flex;
     justify-content: center;
   }
+
+.sem-resultados {
+    border: 1px solid #ccc; /* Borda cinza */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Fundo cinza claro */
+    text-align: center; /* Alinha o texto ao centro */
+    border-radius: 10px;
+  }
   
 
 /* Estiliza cada item de resultado */
@@ -104,6 +112,7 @@ section button:hover {
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 2rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    margin-left: 1rem; /* Espaçamento abaixo dos itens */
     display: flex;
     flex-direction: column; /* Se você quiser que os elementos fiquem em coluna */
     justify-content: center;
@@ -129,7 +138,6 @@ section button:hover {
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
     color: #30475E; /* Cor do texto dos links */
 }
 
@@ -146,36 +154,12 @@ section button:hover {
 
 /* Estiliza as imagens */ 
 img {
-    width: auto; /* A imagem terá um tamanho pré definido */
-    height: auto; /* A altura será ajustada proporcionalmente */
+    width: 200px; /* A imagem terá um tamanho pré definido */
+    height: 200px; /* A altura será ajustada proporcionalmente */
     border-radius: 20px;
     object-fit: cover;
   }
 
-/* Estiliza o form */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input, button {
-    padding: 10px;
-  }
-
-  /* Estiliza a lista */
-  ul {
-    list-style: none; /* Remove os marcadores padrão da lista */
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 20px;
-  }
 
 /* Estiliza o rodapé da página */
 footer {
